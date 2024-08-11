@@ -1,73 +1,52 @@
-# LDM 3DP
+# LDM-3DP Components - v240811
 
-# LDM-3DP Plugin for Grasshopper
+This repository contains components and scripts for developing a Grasshopper plugin for 3D printing with LDM (Liquid Deposition Modeling) technologies, such as the WASP40100. The plugin facilitates G-code generation, path optimization, and export for large-scale, clay-based, and other viscous material printing processes.
 
-This repository contains components and scripts for developing a Grasshopper plugin aimed at 3D printing 
-with LDM (Liquid Deposition Modeling) cartesian technologies, such as the WASP40100. The plugin is designed 
-to facilitate the creation of G-code for complex 3D printing paths, optimizing the workflow for large-scale, 
-clay-based, and other viscous material printing processes.
+## Files Included in v240811:
 
-## Repository Contents
+1. **00_LDM_3DP_Components_240811.gh**
+   - **Type:** Grasshopper Definition
+   - **Size:** 1,528 KB
+   - **Description:** Preassembled Grasshopper definition that contains all the components required for the LDM 3D printing workflow.
 
-### Components and Scripts
+2. **01_Printing_Path_Optimizer_240811.py**
+   - **Type:** Python Source File
+   - **Size:** 5 KB
+   - **Description:** Python script for optimizing the 3D printing path based on the given toolpaths. It rearranges the curves to minimize travel distance between them.
 
-- **G_Code_Generation**
-  - **Version 240720:** 
-    - Basic G-code generation for 3D printing paths.
-  - **Version 240811:** 
-    - Enhanced G-code generation with added functionalities such as layer-specific flux control 
-      and improved path optimization.
+3. **02_G_Code_Generation_240811.py**
+   - **Type:** Python Source File
+   - **Size:** 9 KB
+   - **Description:** Python script that generates G-code from a set of 3D curves. It calculates the number of layers, optimizes extrusion, and adds necessary retraction commands to avoid issues during printing.
 
-- **Printing_Path_Optimizer**
-  - **Version 240811:** 
-    - Tools for optimizing 3D printing paths for efficiency, including retraction management and extrusion control.
+4. **03_G_Code_Export_240811.py**
+   - **Type:** Python Source File
+   - **Size:** 4 KB
+   - **Description:** Python script that handles the exporting of the generated G-code to a specified file location with a given file name and extension. It also includes options for file overwrite protection.
 
-- **W_AM_Components**
-  - **Version 240811:** 
-    - A preassembled Grasshopper definition file (.gh) containing all components and logic required for a complete 
-      3D printing workflow using LDM technologies.
+## How to Use:
 
-### Technologies Supported
+1. **Open the Grasshopper definition**: 
+   - Load the `00_LDM_3DP_Components_240811.gh` file in Grasshopper.
+   - This definition includes all the components necessary for generating and exporting G-code for LDM 3D printing.
 
-- **WASP40100**: 
-  - The components and preassembled algorithm are specifically tailored for use with the WASP40100 3D printer, 
-    a cartesian LDM printer known for its capability to handle large-scale, clay-based printing.
+2. **Customize the Workflow**:
+   - Use the `01_Printing_Path_Optimizer_240811.py` to optimize the toolpaths before generating the G-code.
+   - Generate the G-code with `02_G_Code_Generation_240811.py`.
+   - Export the G-code to your desired location using `03_G_Code_Export_240811.py`.
 
-### How to Use
+3. **Run the Process**:
+   - Adjust input parameters as needed (such as nozzle diameter, printing speed, and printing flux).
+   - Execute the Grasshopper definition to generate and save the G-code.
 
-1. **Download or Clone the Repository**:
-    - Clone the repository using `git clone` or download the zip file from GitHub.
+## Requirements:
 
-2. **Install Components in Grasshopper**:
-    - Place the Python scripts in your Grasshopper components folder.
-    - Open the Grasshopper definition file (`W_AM_Components_240811.gh`) in Rhino and start experimenting 
-      with the 3D printing components.
+- **Rhino 6 or 7**
+- **Grasshopper**
+- **Python (RhinoScriptSyntax)**
 
-3. **Customize for Your Printer**:
-    - The scripts and components are customizable for different LDM printers by adjusting parameters such as 
-      nozzle diameter, printing speed, and layer height.
+## Version History:
 
-### Future Development
+- **v240811** - Initial version with basic functionality for path optimization, G-code generation, and export.
 
-- **Plugin Packaging**:
-  - The current components will be packaged into a user-friendly Grasshopper plugin for easy distribution 
-    and installation.
-  
-- **Additional Features**:
-  - Future versions will include more advanced path optimization, real-time printing feedback, and support 
-    for multi-material printing.
-
-### Contribution
-
-- We welcome contributions to this project. If you have suggestions, find a bug, or want to contribute new features, 
-  please submit a pull request or open an issue.
-
-### License
-
-- This project is licensed under the MIT License. See the LICENSE file for details.
-
-### Contact
-
-- For questions or support, contact [Your Name or Organization] at [Your Email].
-
- 
+---
