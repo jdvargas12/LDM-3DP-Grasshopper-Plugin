@@ -41,9 +41,8 @@ This repository contains components and scripts for developing a Grasshopper plu
 
 ## Requirements:
 
-- **Rhino 6 or 7**
+- **Rhino 8**
 - **Grasshopper**
-- **Python (RhinoScriptSyntax)**
 
 ## Version History:
 
