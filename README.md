@@ -1,6 +1,6 @@
-# LDM-3DP Components - v240811
+# LDM-3DP Components - v241001
 
-This repository contains components and scripts for developing a Grasshopper plugin for 3D printing with LDM (Liquid Deposition Modeling) technologies, such as the WASP40100. The plugin facilitates G-code generation, path optimization, and export for large-scale, clay-based, and other viscous material printing processes.
+This repository contains components and scripts for developing a Grasshopper plugin for 3D printing with LDM (Liquid Deposition Modeling) and FDM (Fused Deposition Modeling) technologies, such as the WASP40100. The plugin facilitates Marvin G-code generation, path optimization, and export for large-scale, clay-based, and other viscous material printing processes.
 
 ## Files Included in v241001:
 
@@ -51,6 +51,6 @@ This repository contains components and scripts for developing a Grasshopper plu
 
 ## Version History:
 
-- **v240811** - Initial version with basic functionality for path optimization, G-code generation, and export.
+- **v241001** - Initial version with basic functionality for path optimization, G-code generation, and export.
 
 ---
