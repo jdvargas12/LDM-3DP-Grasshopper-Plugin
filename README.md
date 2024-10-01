@@ -2,7 +2,7 @@
 
 This repository contains components and scripts for developing a Grasshopper plugin for 3D printing with LDM (Liquid Deposition Modeling) technologies, such as the WASP40100. The plugin facilitates G-code generation, path optimization, and export for large-scale, clay-based, and other viscous material printing processes.
 
-## Files Included in v240811:
+## Files Included in v241001:
 
 1. **00_LDM_3DP_Components_240811.gh**
    - **Type:** Grasshopper Definition
@@ -14,7 +14,12 @@ This repository contains components and scripts for developing a Grasshopper plu
    - **Size:** 5 KB
    - **Description:** Python script for optimizing the 3D printing path based on the given toolpaths. It rearranges the curves to minimize travel distance between them.
 
-3. **02_G_Code_Generation_240811.py**
+3. **02_G_Code_Generation_FDM_241001.py**
+   - **Type:** Python Source File
+   - **Size:** 9 KB
+   - **Description:** Python script that generates G-code from a set of 3D curves. It calculates the number of layers, optimizes extrusion, and adds necessary retraction commands to avoid issues during printing.
+
+3. **02_G_Code_Generation_LDM_241001.py**
    - **Type:** Python Source File
    - **Size:** 9 KB
    - **Description:** Python script that generates G-code from a set of 3D curves. It calculates the number of layers, optimizes extrusion, and adds necessary retraction commands to avoid issues during printing.
