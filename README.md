@@ -6,27 +6,22 @@ This repository contains components and scripts for developing a Grasshopper plu
 
 1. **00_LDM_3DP_Components_240811.gh**
    - **Type:** Grasshopper Definition
-   - **Size:** 1,528 KB
-   - **Description:** Preassembled Grasshopper definition that contains all the components required for the LDM 3D printing workflow.
+   - **Description:** Preassembled Grasshopper definition that contains all the components required for the 3D printing workflow.
 
 2. **01_Printing_Path_Optimizer_240811.py**
    - **Type:** Python Source File
-   - **Size:** 5 KB
    - **Description:** Python script for optimizing the 3D printing path based on the given toolpaths. It rearranges the curves to minimize travel distance between them.
 
 3. **02_G_Code_Generation_FDM_241001.py**
    - **Type:** Python Source File
-   - **Size:** 9 KB
    - **Description:** Python script that generates G-code from a set of 3D curves. It calculates the number of layers, optimizes extrusion, and adds necessary retraction commands to avoid issues during printing.
 
 3. **02_G_Code_Generation_LDM_241001.py**
    - **Type:** Python Source File
-   - **Size:** 9 KB
    - **Description:** Python script that generates G-code from a set of 3D curves. It calculates the number of layers, optimizes extrusion, and adds necessary retraction commands to avoid issues during printing.
 
 4. **03_G_Code_Export_240811.py**
    - **Type:** Python Source File
-   - **Size:** 4 KB
    - **Description:** Python script that handles the exporting of the generated G-code to a specified file location with a given file name and extension. It also includes options for file overwrite protection.
 
 ## How to Use:
